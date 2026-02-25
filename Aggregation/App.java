@@ -1,0 +1,17 @@
+package Aggregation;
+
+public class App {
+    public static void main(String[] args) {
+        // Aggregation represent a has a relationship between objects.
+        Book book1 = new Book("The Fellow of the Ring", 423);
+        Book book2 = new Book("The Two Tower", 352);
+        Book book3 = new Book("The Return of the King", 416);
+
+        Book[] books = { book1, book2, book3 };
+
+        Library library = new Library("NYC public Library", 1897, books);
+
+        library.displayInfo();
+
+    }
+}
